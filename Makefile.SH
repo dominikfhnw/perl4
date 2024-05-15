@@ -333,6 +333,10 @@ realclean: clean
 	rm -f makefile x2p/Makefile x2p/makefile cflags x2p/cflags
 	rm -f c2ph pstruct
 
+distclean: realclean
+	rm -f config.sh cppstdin makefile.old t/c
+	rm -f x2p/config.sh x2p/cppstdin x2p/makefile.old x2p/malloc.c
+
 # The following lint has practically everything turned on.  Unfortunately,
 # you have to wade through a lot of mumbo jumbo that can't be suppressed.
 # If the source file has a /*NOSTRICT*/ somewhere, ignore the lint message
