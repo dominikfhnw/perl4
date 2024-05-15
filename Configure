@@ -1399,7 +1399,7 @@ $echo $n "$rp $c"
 case "$ans" in
 none) ans='';
 esac
-ccflags="$ans"
+ccflags="$ans -std=gnu90 -Dyydebug=0 -Ddebug=0"
 
 : the following weeds options from ccflags that are of no interest to cpp
 cppflags="$ccflags"
