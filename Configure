@@ -2228,9 +2228,9 @@ ndirc=''
 ndiro=''
 if $test -r $usrinclude/dirent.h; then
     echo "dirent.h found."
-    if $contains 'd_namlen' $usrinclude/dirent.h >/dev/null 2>&1; then
-	D_dirnamlen="$define"
-    fi
+#    if $contains 'd_namlen' $usrinclude/dirent.h >/dev/null 2>&1; then
+#	D_dirnamlen="$define"
+#    fi
     I_dirent="$define"
 elif $test -r $xxx; then
     echo "You seem to use <$xxx>,"
