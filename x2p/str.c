@@ -18,6 +18,7 @@
 #include "EXTERN.h"
 #include "util.h"
 #include "a2p.h"
+#include <string.h>
 
 str_numset(str,num)
 register STR *str;

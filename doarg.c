@@ -1198,7 +1198,7 @@ int *arglast;
     HASH *hash;
     int i;
 
-    makelocal = (arg->arg_flags & AF_LOCAL) != 0;
+    makelocal = (arg->arg_flags & AF_LOCALVAR) != 0;
     localizing = makelocal;
     delaymagic = DM_DELAY;		/* catch simultaneous items */
 

@@ -1,0 +1,11 @@
+#!/bin/sh
+# this file was added in 2024, to make the perl4 build less bizarre
+# for people used to "modern" software
+
+# "-d" should make it noninteractive, but it doesn't.
+# Use "yes" to feed newlines
+# Also execute make depend at the end
+yes '' | ./Configure -d  && make depend
+
+echo
+echo "Now do 'make' and 'make test'"

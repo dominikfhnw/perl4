@@ -23,6 +23,7 @@
 #include "../patchlevel.h"
 #endif
 #include "util.h"
+#include <string.h>
 char *index();
 
 char *filename;

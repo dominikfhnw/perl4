@@ -260,7 +260,7 @@ unsigned int flags;
 	(void)strcat(b,"DEPR,");
     if (flags & AF_LISTISH)
 	(void)strcat(b,"LISTISH,");
-    if (flags & AF_LOCAL)
+    if (flags & AF_LOCALVAR)
 	(void)strcat(b,"LOCAL,");
     if (*b)
 	b[strlen(b)-1] = '\0';

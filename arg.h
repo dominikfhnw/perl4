@@ -682,7 +682,7 @@ struct arg {
 #define AF_COMMON 16		/* left and right have symbols in common */
 #define AF_DEPR 32		/* an older form of the construct */
 #define AF_LISTISH 64		/* turn into list if important */
-#define AF_LOCAL 128		/* list of local variables */
+#define AF_LOCALVAR 128		/* list of local variables */
 
 /*
  * Most of the ARG pointers are used as pointers to arrays of ARG.  When

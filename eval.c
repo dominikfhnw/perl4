@@ -2355,7 +2355,7 @@ donumset:
 #ifdef TAINT
 	taintproper("Insecure dependency in setpgrp");
 #endif
-	value = (double)(setpgrp(argtype,anum) >= 0);
+	value = (double)(setpgid(argtype,anum) >= 0);
 	goto donumset;
 #else
 	fatal("The setpgrp() function is unimplemented on this machine");

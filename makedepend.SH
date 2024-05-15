@@ -93,7 +93,7 @@ for file in `$cat .clist`; do
     *.y) filebase=`basename $file .y` ;;
     esac
     case "$file" in
-    */*) finc="-I`echo $file | sed 's#/[^/]*$##`" ;;
+    */*) finc="-I`echo $file | sed 's#/[^/]*$##'`" ;;
     *)   finc= ;;
     esac
     $echo "Finding dependencies for $filebase.o."
@@ -114,7 +114,7 @@ for file in `$cat .clist`; do
 	-e 's/^# *[0-9][0-9]* \(.*\)$/'$filebase'.o: \1/' \
 	-e 's|: \./|: |' \
 	-e 's|\.c\.c|.c|' | \
-    $uniq | $sort | $uniq >> .deptmp
+    $uniq | $sort | $uniq | $egrep -v -e ': <.*>$' -e 'y\.tab\.h' >> .deptmp
 done
 
 $sed <$mf >$mf.new -e '1,/^# AUTOMATICALLY/!d'
