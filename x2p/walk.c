@@ -28,6 +28,7 @@
 #include "EXTERN.h"
 #include "util.h"
 #include "a2p.h"
+#include <string.h>
 
 bool exitval = FALSE;
 bool realexit = FALSE;
