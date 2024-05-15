@@ -704,8 +704,8 @@ register ARG *arg;
 		if (nothing_in_common(arg1,arg2))
 		    arg->arg_flags &= ~AF_COMMON;
 		if (arg->arg_type == O_ASSIGN) {
-		    if (arg1->arg_flags & AF_LOCAL)
-			arg->arg_flags |= AF_LOCAL;
+		    if (arg1->arg_flags & AF_LOCALVAR)
+			arg->arg_flags |= AF_LOCALVAR;
 		    arg[1].arg_flags |= AF_ARYOK;
 		    arg[2].arg_flags |= AF_ARYOK;
 		}
@@ -1055,7 +1055,7 @@ ARG *
 localize(arg)
 ARG *arg;
 {
-    arg->arg_flags |= AF_LOCAL;
+    arg->arg_flags |= AF_LOCALVAR;
     return arg;
 }
 
