@@ -366,6 +366,7 @@ voidwant=1
 voidwant=7
 libswanted="c_s net_s net socket nsl_s nsl nm ndir dir ndbm dbm PW malloc sun m bsd BSD x posix ucb"
 inclwanted='/usr/include /usr/netinclude /usr/include/sun /usr/include/bsd /usr/include/lan /usr/ucbinclude'
+inclwanted="`echo | cc -E -Wp,-v - 2>&1 >/dev/null | grep '^ '` $inclwanted"
 
 : Now test for existence of everything in MANIFEST
 
