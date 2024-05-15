@@ -1463,7 +1463,7 @@ for thislib in $libswanted; do
 	*) dflt="$dflt -l$thislib ";;
 	esac
     else
-	xxx=`./loc lib$thislib.a X $libpth`
+	xxx=`./loc lib$thislib.so X $libpth`
 	if test -f $xxx; then
 	    echo "Found $xxx."
 	    case "$dflt" in
