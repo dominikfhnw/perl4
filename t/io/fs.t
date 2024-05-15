@@ -1,6 +1,6 @@
 #!./perl
 
-# $Header: fs.t,v 4.0 91/03/20 01:50:55 lwall Locked $
+# $RCSfile: fs.t,v $$Revision: 4.0.1.1 $$Date: 1993/02/05 19:44:34 $
 
 print "1..22\n";
 
