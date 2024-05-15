@@ -326,6 +326,7 @@ test -d /lib/large		&& libpth="$libpth /lib/large"
 test -d /usr/lib/small		&& libpth="$libpth /usr/lib/small"
 test -d /lib/small		&& libpth="$libpth /lib/small"
 test -d /usr/lib/cmplrs/cc	&& libpth="$libpth /usr/lib/cmplrs/cc"
+libpth="`cc -print-search-dirs | sed -n '/^libraries: =/{s///;s/:/\n/g;p}' | xargs readlink -e | sort -u` $libpth"
 
 smallmach='pdp11 i8086 z8000 i80286 iAPX286'
 trap 'echo " "; exit 1' 1 2 3
