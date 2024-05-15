@@ -1,4 +1,4 @@
-/* $RCSfile: toke.c,v $$Revision: 4.0.1.8 $$Date: 92/06/23 12:33:45 $
+/* $RCSfile: toke.c,v $$Revision: 4.0.1.9 $$Date: 1993/02/05 19:48:43 $
  *
  *    Copyright (c) 1991, Larry Wall
  *
@@ -6,6 +6,10 @@
  *    License or the Artistic License, as specified in the README file.
  *
  * $Log:	toke.c,v $
+ * Revision 4.0.1.9  1993/02/05  19:48:43  lwall
+ * patch36: now detects ambiguous use of filetest operators as well as unary
+ * patch36: fixed ambiguity on - within tr///
+ *
  * Revision 4.0.1.8  92/06/23  12:33:45  lwall
  * patch35: bad interaction between backslash and hyphen in tr///
  * 

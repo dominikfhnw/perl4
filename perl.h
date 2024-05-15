@@ -1,4 +1,4 @@
-/* $RCSfile: perl.h,v $$Revision: 4.0.1.6 $$Date: 92/06/08 14:55:10 $
+/* $RCSfile: perl.h,v $$Revision: 4.0.1.7 $$Date: 1993/02/05 19:40:30 $
  *
  *    Copyright (c) 1991, Larry Wall
  *
@@ -6,6 +6,9 @@
  *    License or the Artistic License, as specified in the README file.
  *
  * $Log:	perl.h,v $
+ * Revision 4.0.1.7  1993/02/05  19:40:30  lwall
+ * patch36: worked around certain busted compilers that don't init statics right
+ *
  * Revision 4.0.1.6  92/06/08  14:55:10  lwall
  * patch20: added Atari ST portability
  * patch20: bcopy() and memcpy() now tested for overlap safety

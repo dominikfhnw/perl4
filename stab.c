@@ -1,4 +1,4 @@
-/* $RCSfile: stab.c,v $$Revision: 4.0.1.4 $$Date: 92/06/08 15:32:19 $
+/* $RCSfile: stab.c,v $$Revision: 4.0.1.5 $$Date: 1993/02/05 19:42:47 $
  *
  *    Copyright (c) 1991, Larry Wall
  *
@@ -6,6 +6,9 @@
  *    License or the Artistic License, as specified in the README file.
  *
  * $Log:	stab.c,v $
+ * Revision 4.0.1.5  1993/02/05  19:42:47  lwall
+ * patch36: length returned wrong value on certain semi-magical variables
+ *
  * Revision 4.0.1.4  92/06/08  15:32:19  lwall
  * patch20: fixed confusion between a *var's real name and its effective name
  * patch20: the debugger now warns you on lines that can't set a breakpoint

@@ -1,4 +1,4 @@
-/* $RCSfile: str.c,v $$Revision: 4.0.1.6 $$Date: 92/06/11 21:14:21 $
+/* $RCSfile: str.c,v $$Revision: 4.0.1.7 $$Date: 1993/02/05 19:43:47 $
  *
  *    Copyright (c) 1991, Larry Wall
  *
@@ -6,6 +6,9 @@
  *    License or the Artistic License, as specified in the README file.
  *
  * $Log:	str.c,v $
+ * Revision 4.0.1.7  1993/02/05  19:43:47  lwall
+ * patch36: the non-std stdio input code wasn't null-proof
+ *
  * Revision 4.0.1.6  92/06/11  21:14:21  lwall
  * patch34: quotes containing subscripts containing variables didn't parse right
  * 

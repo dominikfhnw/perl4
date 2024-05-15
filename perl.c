@@ -1,4 +1,4 @@
-char rcsid[] = "$RCSfile: perl.c,v $$Revision: 4.0.1.7 $$Date: 92/06/08 14:50:39 $\nPatch level: ###\n";
+char rcsid[] = "$RCSfile: perl.c,v $$Revision: 4.0.1.8 $$Date: 1993/02/05 19:39:30 $\nPatch level: ###\n";
 /*
  *    Copyright (c) 1991, Larry Wall
  *
@@ -6,6 +6,10 @@ char rcsid[] = "$RCSfile: perl.c,v $$Revision: 4.0.1.7 $$Date: 92/06/08 14:50:39
  *    License or the Artistic License, as specified in the README file.
  *
  * $Log:	perl.c,v $
+ * Revision 4.0.1.8  1993/02/05  19:39:30  lwall
+ * patch36: the taintanyway code wasn't tainting anyway
+ * patch36: Malformed cmd links core dump apparently fixed
+ *
  * Revision 4.0.1.7  92/06/08  14:50:39  lwall
  * patch20: PERLLIB now supports multiple directories
  * patch20: running taintperl explicitly now does checks even if $< == $>

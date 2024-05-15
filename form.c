@@ -1,4 +1,4 @@
-/* $RCSfile: form.c,v $$Revision: 4.0.1.3 $$Date: 92/06/08 13:21:42 $
+/* $RCSfile: form.c,v $$Revision: 4.0.1.4 $$Date: 1993/02/05 19:34:32 $
  *
  *    Copyright (c) 1991, Larry Wall
  *
@@ -6,6 +6,9 @@
  *    License or the Artistic License, as specified in the README file.
  *
  * $Log:	form.c,v $
+ * Revision 4.0.1.4  1993/02/05  19:34:32  lwall
+ * patch36: formats now ignore literal text for ~~ loop determination
+ *
  * Revision 4.0.1.3  92/06/08  13:21:42  lwall
  * patch20: removed implicit int declarations on funcions
  * patch20: form feed for formats is now specifiable via $^L

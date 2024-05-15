@@ -1,4 +1,4 @@
-/* $RCSfile: perly.y,v $$Revision: 4.0.1.5 $$Date: 92/06/11 21:12:50 $
+/* $RCSfile: perly.y,v $$Revision: 4.0.1.6 $$Date: 1993/02/05 19:41:15 $
  *
  *    Copyright (c) 1991, Larry Wall
  *
@@ -6,6 +6,9 @@
  *    License or the Artistic License, as specified in the README file.
  *
  * $Log:	perly.y,v $
+ * Revision 4.0.1.6  1993/02/05  19:41:15  lwall
+ * patch36: delete with parens dumped core
+ *
  * Revision 4.0.1.5  92/06/11  21:12:50  lwall
  * patch34: expectterm incorrectly set to indicate start of program or block
  * 

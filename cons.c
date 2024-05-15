@@ -1,4 +1,4 @@
-/* $RCSfile: cons.c,v $$Revision: 4.0.1.3 $$Date: 92/06/08 12:18:35 $
+/* $RCSfile: cons.c,v $$Revision: 4.0.1.4 $$Date: 1993/02/05 19:30:15 $
  *
  *    Copyright (c) 1991, Larry Wall
  *
@@ -6,6 +6,9 @@
  *    License or the Artistic License, as specified in the README file.
  *
  * $Log:	cons.c,v $
+ * Revision 4.0.1.4  1993/02/05  19:30:15  lwall
+ * patch36: fixed various little coredump bugs
+ *
  * Revision 4.0.1.3  92/06/08  12:18:35  lwall
  * patch20: removed implicit int declarations on funcions
  * patch20: deleted some minor memory leaks
@@ -15,7 +18,7 @@
  * patch20: debugger sometimes displayed wrong source line
  * patch20: various error messages have been clarified
  * patch20: an eval block containing a null block or statement could dump core
- * 
+ *
  * Revision 4.0.1.2  91/11/05  16:15:13  lwall
  * patch11: debugger got confused over nested subroutine definitions
  * patch11: prepared for ctype implementations that don't define isascii()
